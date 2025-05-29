@@ -1,9 +1,53 @@
-# Chat4BA
+# Medical Recommendation System
 
-## Overview
-This repository contains the source code and documentation for a Software-as-a-Service (SaaS) application designed to deliver a scalable, enterprise-grade conversational AI platform. The goal is to empower businesses with intelligent, context-aware interactions to enhance customer support, streamline workflows, and extract insights from unstructured data. Built over a 10-week timeline starting March 25, 2025, this project leverages open-source technologies and a modular architecture for cost-effectiveness and adaptability.
+A simple Python utility to parse PDF files and extract their content.
 
-## Project Goals
-- Provide real-time, multi-tenant conversational AI capabilities.
-- Offer a user-friendly dashboard for monitoring and analytics.
-- Ensure scalability and enterprise readiness through microservices and modern DevOps practices.
+## Features
+
+- Extract text content from PDF files
+- Access PDF metadata
+- Get basic file information (number of pages, filename)
+- (Coming soon) Table extraction
+- (Coming soon) Image extraction
+
+## Requirements
+
+Make sure you have Python 3.7+ installed and the following package:
+- pypdf
+
+## Usage
+
+### Command Line Interface
+
+```bash
+python main.py path/to/your/file.pdf
+```
+
+### As a Library
+
+```python
+from parser import PDFParser
+
+# Create parser instance
+pdf_parser = PDFParser()
+
+# Parse a PDF file
+result = pdf_parser.parse_pdf("path/to/your/file.pdf")
+
+# Access the extracted data
+print(f"Number of pages: {result['num_pages']}")
+print(f"File name: {result['file_name']}")
+print(f"Metadata: {result['metadata']}")
+print(f"Text content: {result['text_content']}")
+```
+
+## Error Handling
+
+The parser will raise exceptions in the following cases:
+- File not found
+- Unsupported file format (only .pdf files are supported)
+- PDF parsing errors
+
+## Contributing
+
+Feel free to submit issues and enhancement requests! 
