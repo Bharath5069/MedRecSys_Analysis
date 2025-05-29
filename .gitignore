@@ -1,0 +1,5 @@
+# Ignore virtual env, node_modules, logs, env files you don't want on GitHub
+nenv/
+node_modules/
+*.log
+.env

@@ -1,0 +1,30 @@
+Based on the following patient data, please provide a comprehensive treatment plan:
+
+{patient_data}
+
+Please structure your response in the following format:
+
+1. Primary Diagnosis:
+   - List the main conditions identified
+   - Include confidence level for each diagnosis
+
+2. Treatment Recommendations:
+   - List specific medications, dosages, and duration
+   - Include any lifestyle modifications
+   - Specify follow-up requirements
+
+3. Risk Factors:
+   - Identify any potential risk factors
+   - Suggest preventive measures
+
+4. Monitoring Plan:
+   - Specify what needs to be monitored
+   - Recommend frequency of check-ups
+   - List any specific tests required
+
+5. Additional Notes:
+   - Any special considerations
+   - Contraindications
+   - Alternative treatment options
+
+Please ensure all recommendations are evidence-based and consider the patient's overall health status. 

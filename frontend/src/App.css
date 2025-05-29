@@ -1,0 +1,26 @@
+.layout {
+    min-height: 100vh;
+}
+
+.ant-layout-header {
+    background: #001529;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.ant-layout-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+
+.upload-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.analysis-history {
+    margin-top: 24px;
+} 
